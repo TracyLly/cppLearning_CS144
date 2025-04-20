@@ -81,6 +81,8 @@ clean: CMakeFiles/tidy_tests__wrapping_integers_cmp.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__wrapping_integers_cmp.cc.dir/clean
 clean: CMakeFiles/tidy_tests__tcp_parser.cc.dir/clean
 clean: CMakeFiles/tidy_tests__tcp_fsm_test_harness.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean
+clean: CMakeFiles/tidy_tests__send_transmit.cc.dir/clean
 clean: CMakeFiles/tidy_tests__byte_stream_test_harness.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__send_transmit.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__byte_stream_test_harness.cc.dir/clean
@@ -99,18 +101,23 @@ clean: CMakeFiles/tidy_tests__byte_stream_two_writes.cc.dir/clean
 clean: CMakeFiles/tidy_tests__fsm_ack_rst_win.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__byte_stream_two_writes.cc.dir/clean
 clean: CMakeFiles/tidy_tests__fsm_stream_reassembler_overlapping.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean
+clean: CMakeFiles/tidy_util__socket.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_stream_reassembler_holes.cc.dir/clean
 clean: CMakeFiles/check_lab0.dir/clean
 clean: CMakeFiles/tidy_util__parser.cc.dir/clean
+clean: CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_util__parser.cc.dir/clean
 clean: CMakeFiles/tidy_util__eventloop.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_loopback_win.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_util__eventloop.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean
+clean: CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_util__socket.cc.dir/clean
 clean: CMakeFiles/tidy_doctests__address_example_3.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_retx.cc.dir/clean
-clean: CMakeFiles/tidy_util__socket.cc.dir/clean
-clean: CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_doctests__address_example_1.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_doctests__address_dt.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_ack_rst.cc.dir/clean
@@ -123,8 +130,6 @@ clean: CMakeFiles/tidy_quiet_doctests__address_example_2.cc.dir/clean
 clean: CMakeFiles/tidy_tests__wrapping_integers_wrap.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_apps__webget.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/clean
-clean: CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean
-clean: CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_doctests__socket_dt.cc.dir/clean
 clean: CMakeFiles/tidy_doctests__address_example_2.cc.dir/clean
 clean: CMakeFiles/tidy_doctests__address_example_1.cc.dir/clean
@@ -143,14 +148,9 @@ clean: CMakeFiles/tidy_quiet_util__util.cc.dir/clean
 clean: CMakeFiles/tidy_util__buffer.cc.dir/clean
 clean: CMakeFiles/tidy_apps__webget.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_doctests__socket_example_2.cc.dir/clean
-clean: CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean
-clean: CMakeFiles/tidy_tests__send_transmit.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_relaxed.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/clean
-clean: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean
-clean: CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean
-clean: CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean
-clean: CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__tcp_parser.cc.dir/clean
 clean: CMakeFiles/tidy_doctests__socket_example_3.cc.dir/clean
 clean: CMakeFiles/tidy_tests__byte_stream_one_write.cc.dir/clean
@@ -159,6 +159,8 @@ clean: CMakeFiles/tidy_quiet_libsponge__byte_stream.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_doctests__parser_dt.cc.dir/clean
 clean: CMakeFiles/tidy_tests__recv_connect.cc.dir/clean
 clean: CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/clean
+clean: CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean
+clean: CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean
 clean: CMakeFiles/tidy_libsponge__byte_stream.cc.dir/clean
 clean: CMakeFiles/tidy_tests__fsm_ack_rst_win_relaxed.cc.dir/clean
 clean: CMakeFiles/tidy_doctests__socket_dt.cc.dir/clean
@@ -425,6 +427,7 @@ CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__wrapping_integers_unwrap
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__wrapping_integers_cmp.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__tcp_parser.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__tcp_fsm_test_harness.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__send_transmit.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__byte_stream_test_harness.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__parser_example.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__byte_stream_capacity.cc.dir/all
@@ -434,16 +437,17 @@ CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__recv_reorder.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__byte_stream_two_writes.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_ack_rst_win.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_stream_reassembler_overlapping.cc.dir/all
-CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__parser.cc.dir/all
-CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__eventloop.cc.dir/all
-CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__address_example_3.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__socket.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__parser.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__eventloop.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__address_example_3.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_retx.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_ack_rst.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__address.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_winsize.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__wrapping_integers_wrap.cc.dir/all
-CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__address_example_2.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__address_example_1.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__util.cc.dir/all
@@ -452,12 +456,11 @@ CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__file_descriptor.cc.dir/al
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__send_window.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_util__buffer.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_apps__webget.cc.dir/all
-CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__send_transmit.cc.dir/all
-CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__socket_example_3.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__byte_stream_one_write.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__address_dt.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__recv_connect.cc.dir/all
+CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_libsponge__byte_stream.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_tests__fsm_ack_rst_win_relaxed.cc.dir/all
 CMakeFiles/tidy_verbose.dir/all: CMakeFiles/tidy_doctests__socket_dt.cc.dir/all
@@ -699,6 +702,60 @@ tidy_tests__tcp_fsm_test_harness.cc: CMakeFiles/tidy_tests__tcp_fsm_test_harness
 CMakeFiles/tidy_tests__tcp_fsm_test_harness.cc.dir/clean:
 	$(MAKE) -f CMakeFiles/tidy_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_tests__tcp_fsm_test_harness.cc.dir/clean
 .PHONY : CMakeFiles/tidy_tests__tcp_fsm_test_harness.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_tests__tcp_fsm_test_harness.cc"
+.PHONY : CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/rule
+
+# Convenience name for target.
+tidy_quiet_tests__tcp_fsm_test_harness.cc: CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/rule
+
+.PHONY : tidy_quiet_tests__tcp_fsm_test_harness.cc
+
+# clean rule for target.
+CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_tests__send_transmit.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_tests__send_transmit.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_tests__send_transmit.cc"
+.PHONY : CMakeFiles/tidy_tests__send_transmit.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_tests__send_transmit.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__send_transmit.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_tests__send_transmit.cc.dir/rule
+
+# Convenience name for target.
+tidy_tests__send_transmit.cc: CMakeFiles/tidy_tests__send_transmit.cc.dir/rule
+
+.PHONY : tidy_tests__send_transmit.cc
+
+# clean rule for target.
+CMakeFiles/tidy_tests__send_transmit.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/clean
+.PHONY : CMakeFiles/tidy_tests__send_transmit.cc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_tests__byte_stream_test_harness.cc.dir
@@ -1004,6 +1061,7 @@ CMakeFiles/tidy_doctests__socket_example_1.cc.dir/clean:
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__wrapping_integers_wrap.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__wrapping_integers_unwrap.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__wrapping_integers_cmp.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__send_transmit.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__byte_stream_test_harness.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__byte_stream_one_write.cc.dir/all
@@ -1011,13 +1069,16 @@ CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__byte_stream_many_writes.cc
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__byte_stream_construction.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__tun.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__byte_stream_two_writes.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_stream_reassembler_holes.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__parser.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_loopback_win.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__eventloop.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__socket.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_retx.cc.dir/all
-CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__buffer.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__address_example_1.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__address_dt.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_ack_rst.cc.dir/all
@@ -1025,7 +1086,6 @@ CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__recv_transmit.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__address_example_2.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_apps__webget.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/all
-CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__socket_dt.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_stream_reassembler_many.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__byte_stream_capacity.cc.dir/all
@@ -1033,16 +1093,14 @@ CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win_relaxed.cc
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__file_descriptor.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__util.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__socket_example_2.cc.dir/all
-CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_relaxed.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/all
-CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all
-CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all
-CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_util__buffer.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__tcp_parser.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_libsponge__byte_stream.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__parser_dt.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__recv_connect.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_connect.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_quiet_tests__fsm_winsize.cc.dir/all
@@ -1254,6 +1312,60 @@ CMakeFiles/tidy_tests__fsm_stream_reassembler_overlapping.cc.dir/clean:
 .PHONY : CMakeFiles/tidy_tests__fsm_stream_reassembler_overlapping.cc.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tidy_quiet_tests__send_window.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_tests__send_window.cc"
+.PHONY : CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_quiet_tests__send_window.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_quiet_tests__send_window.cc.dir/rule
+
+# Convenience name for target.
+tidy_quiet_tests__send_window.cc: CMakeFiles/tidy_quiet_tests__send_window.cc.dir/rule
+
+.PHONY : tidy_quiet_tests__send_window.cc
+
+# clean rule for target.
+CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_util__socket.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_util__socket.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_util__socket.cc"
+.PHONY : CMakeFiles/tidy_util__socket.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_util__socket.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__socket.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_util__socket.cc.dir/rule
+
+# Convenience name for target.
+tidy_util__socket.cc: CMakeFiles/tidy_util__socket.cc.dir/rule
+
+.PHONY : tidy_util__socket.cc
+
+# clean rule for target.
+CMakeFiles/tidy_util__socket.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/clean
+.PHONY : CMakeFiles/tidy_util__socket.cc.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_tests__fsm_stream_reassembler_holes.cc.dir
 
 # All Build rule for target.
@@ -1333,6 +1445,33 @@ tidy_util__parser.cc: CMakeFiles/tidy_util__parser.cc.dir/rule
 CMakeFiles/tidy_util__parser.cc.dir/clean:
 	$(MAKE) -f CMakeFiles/tidy_util__parser.cc.dir/build.make CMakeFiles/tidy_util__parser.cc.dir/clean
 .PHONY : CMakeFiles/tidy_util__parser.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_libsponge__stream_reassembler.cc"
+.PHONY : CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/rule
+
+# Convenience name for target.
+tidy_libsponge__stream_reassembler.cc: CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/rule
+
+.PHONY : tidy_libsponge__stream_reassembler.cc
+
+# clean rule for target.
+CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/clean
+.PHONY : CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_util__parser.cc.dir
@@ -1443,6 +1582,60 @@ CMakeFiles/tidy_quiet_util__eventloop.cc.dir/clean:
 .PHONY : CMakeFiles/tidy_quiet_util__eventloop.cc.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_tests__fsm_ack_rst_win.cc"
+.PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/rule
+
+# Convenience name for target.
+tidy_quiet_tests__fsm_ack_rst_win.cc: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/rule
+
+.PHONY : tidy_quiet_tests__fsm_ack_rst_win.cc
+
+# clean rule for target.
+CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_tests__fsm_loopback.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_tests__fsm_loopback.cc"
+.PHONY : CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_tests__fsm_loopback.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_tests__fsm_loopback.cc.dir/rule
+
+# Convenience name for target.
+tidy_tests__fsm_loopback.cc: CMakeFiles/tidy_tests__fsm_loopback.cc.dir/rule
+
+.PHONY : tidy_tests__fsm_loopback.cc
+
+# clean rule for target.
+CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean
+.PHONY : CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_util__socket.cc.dir
 
 # All Build rule for target.
@@ -1524,58 +1717,58 @@ CMakeFiles/tidy_quiet_tests__fsm_retx.cc.dir/clean:
 .PHONY : CMakeFiles/tidy_quiet_tests__fsm_retx.cc.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tidy_util__socket.cc.dir
+# Target rules for target CMakeFiles/tidy_quiet_util__buffer.cc.dir
 
 # All Build rule for target.
-CMakeFiles/tidy_util__socket.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_util__socket.cc"
-.PHONY : CMakeFiles/tidy_util__socket.cc.dir/all
+CMakeFiles/tidy_quiet_util__buffer.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_util__buffer.cc"
+.PHONY : CMakeFiles/tidy_quiet_util__buffer.cc.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tidy_util__socket.cc.dir/rule: cmake_check_build_system
+CMakeFiles/tidy_quiet_util__buffer.cc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__socket.cc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_util__buffer.cc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_util__socket.cc.dir/rule
+.PHONY : CMakeFiles/tidy_quiet_util__buffer.cc.dir/rule
 
 # Convenience name for target.
-tidy_util__socket.cc: CMakeFiles/tidy_util__socket.cc.dir/rule
+tidy_quiet_util__buffer.cc: CMakeFiles/tidy_quiet_util__buffer.cc.dir/rule
 
-.PHONY : tidy_util__socket.cc
+.PHONY : tidy_quiet_util__buffer.cc
 
 # clean rule for target.
-CMakeFiles/tidy_util__socket.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/clean
-.PHONY : CMakeFiles/tidy_util__socket.cc.dir/clean
+CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tidy_quiet_tests__send_window.cc.dir
+# Target rules for target CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir
 
 # All Build rule for target.
-CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_tests__send_window.cc"
-.PHONY : CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all
+CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_doctests__socket_example_1.cc"
+.PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tidy_quiet_tests__send_window.cc.dir/rule: cmake_check_build_system
+CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_tests__send_window.cc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_quiet_tests__send_window.cc.dir/rule
+.PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/rule
 
 # Convenience name for target.
-tidy_quiet_tests__send_window.cc: CMakeFiles/tidy_quiet_tests__send_window.cc.dir/rule
+tidy_quiet_doctests__socket_example_1.cc: CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/rule
 
-.PHONY : tidy_quiet_tests__send_window.cc
+.PHONY : tidy_quiet_doctests__socket_example_1.cc
 
 # clean rule for target.
-CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean
-.PHONY : CMakeFiles/tidy_quiet_tests__send_window.cc.dir/clean
+CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_doctests__address_example_1.cc.dir
@@ -1900,60 +2093,6 @@ tidy_quiet_tests__fsm_reorder.cc: CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.di
 CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/clean:
 	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/clean
 .PHONY : CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_tests__fsm_ack_rst_relaxed.cc"
-.PHONY : CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/rule
-
-# Convenience name for target.
-tidy_tests__fsm_ack_rst_relaxed.cc: CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/rule
-
-.PHONY : tidy_tests__fsm_ack_rst_relaxed.cc
-
-# clean rule for target.
-CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean
-.PHONY : CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_doctests__parser_example.cc"
-.PHONY : CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/rule
-
-# Convenience name for target.
-tidy_quiet_doctests__parser_example.cc: CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/rule
-
-.PHONY : tidy_quiet_doctests__parser_example.cc
-
-# clean rule for target.
-CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean
-.PHONY : CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_doctests__socket_dt.cc.dir
@@ -2442,60 +2581,6 @@ CMakeFiles/tidy_quiet_doctests__socket_example_2.cc.dir/clean:
 .PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_2.cc.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_tests__tcp_fsm_test_harness.cc"
-.PHONY : CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/rule
-
-# Convenience name for target.
-tidy_quiet_tests__tcp_fsm_test_harness.cc: CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/rule
-
-.PHONY : tidy_quiet_tests__tcp_fsm_test_harness.cc
-
-# clean rule for target.
-CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean
-.PHONY : CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_tests__send_transmit.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_tests__send_transmit.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_tests__send_transmit.cc"
-.PHONY : CMakeFiles/tidy_tests__send_transmit.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_tests__send_transmit.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__send_transmit.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_tests__send_transmit.cc.dir/rule
-
-# Convenience name for target.
-tidy_tests__send_transmit.cc: CMakeFiles/tidy_tests__send_transmit.cc.dir/rule
-
-.PHONY : tidy_tests__send_transmit.cc
-
-# clean rule for target.
-CMakeFiles/tidy_tests__send_transmit.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/clean
-.PHONY : CMakeFiles/tidy_tests__send_transmit.cc.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_tests__fsm_ack_rst_relaxed.cc.dir
 
 # All Build rule for target.
@@ -2523,6 +2608,33 @@ CMakeFiles/tidy_quiet_tests__fsm_ack_rst_relaxed.cc.dir/clean:
 .PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_relaxed.cc.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_libsponge__stream_reassembler.cc"
+.PHONY : CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/rule
+
+# Convenience name for target.
+tidy_quiet_libsponge__stream_reassembler.cc: CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/rule
+
+.PHONY : tidy_quiet_libsponge__stream_reassembler.cc
+
+# clean rule for target.
+CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir
 
 # All Build rule for target.
@@ -2548,114 +2660,6 @@ tidy_quiet_doctests__socket_example_3.cc: CMakeFiles/tidy_quiet_doctests__socket
 CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/clean:
 	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/clean
 .PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_tests__fsm_ack_rst_win.cc"
-.PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/rule
-
-# Convenience name for target.
-tidy_quiet_tests__fsm_ack_rst_win.cc: CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/rule
-
-.PHONY : tidy_quiet_tests__fsm_ack_rst_win.cc
-
-# clean rule for target.
-CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean
-.PHONY : CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_doctests__socket_example_1.cc"
-.PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/rule
-
-# Convenience name for target.
-tidy_quiet_doctests__socket_example_1.cc: CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/rule
-
-.PHONY : tidy_quiet_doctests__socket_example_1.cc
-
-# clean rule for target.
-CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean
-.PHONY : CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_quiet_util__buffer.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_quiet_util__buffer.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_util__buffer.cc"
-.PHONY : CMakeFiles/tidy_quiet_util__buffer.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_quiet_util__buffer.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_util__buffer.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_quiet_util__buffer.cc.dir/rule
-
-# Convenience name for target.
-tidy_quiet_util__buffer.cc: CMakeFiles/tidy_quiet_util__buffer.cc.dir/rule
-
-.PHONY : tidy_quiet_util__buffer.cc
-
-# clean rule for target.
-CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean
-.PHONY : CMakeFiles/tidy_quiet_util__buffer.cc.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tidy_tests__fsm_loopback.cc.dir
-
-# All Build rule for target.
-CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all:
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/depend
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_tests__fsm_loopback.cc"
-.PHONY : CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tidy_tests__fsm_loopback.cc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__fsm_loopback.cc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
-.PHONY : CMakeFiles/tidy_tests__fsm_loopback.cc.dir/rule
-
-# Convenience name for target.
-tidy_tests__fsm_loopback.cc: CMakeFiles/tidy_tests__fsm_loopback.cc.dir/rule
-
-.PHONY : tidy_tests__fsm_loopback.cc
-
-# clean rule for target.
-CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean:
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean
-.PHONY : CMakeFiles/tidy_tests__fsm_loopback.cc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_quiet_tests__tcp_parser.cc.dir
@@ -2872,6 +2876,60 @@ tidy_quiet_tests__fsm_connect_relaxed.cc: CMakeFiles/tidy_quiet_tests__fsm_conne
 CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/clean:
 	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/clean
 .PHONY : CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_quiet_doctests__parser_example.cc"
+.PHONY : CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/rule
+
+# Convenience name for target.
+tidy_quiet_doctests__parser_example.cc: CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/rule
+
+.PHONY : tidy_quiet_doctests__parser_example.cc
+
+# clean rule for target.
+CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean
+.PHONY : CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all:
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/depend
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num= "Built target tidy_tests__fsm_ack_rst_relaxed.cc"
+.PHONY : CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/rule
+
+# Convenience name for target.
+tidy_tests__fsm_ack_rst_relaxed.cc: CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/rule
+
+.PHONY : tidy_tests__fsm_ack_rst_relaxed.cc
+
+# clean rule for target.
+CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean:
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean
+.PHONY : CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_libsponge__byte_stream.cc.dir
@@ -4419,12 +4477,12 @@ CMakeFiles/tidy_tests__send_retx.cc.dir/clean:
 libsponge/CMakeFiles/sponge.dir/all:
 	$(MAKE) -f libsponge/CMakeFiles/sponge.dir/build.make libsponge/CMakeFiles/sponge.dir/depend
 	$(MAKE) -f libsponge/CMakeFiles/sponge.dir/build.make libsponge/CMakeFiles/sponge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34 "Built target sponge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35 "Built target sponge"
 .PHONY : libsponge/CMakeFiles/sponge.dir/all
 
 # Build rule for subdir invocation for target.
 libsponge/CMakeFiles/sponge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 libsponge/CMakeFiles/sponge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : libsponge/CMakeFiles/sponge.dir/rule
@@ -4446,12 +4504,12 @@ libsponge/CMakeFiles/sponge.dir/clean:
 apps/CMakeFiles/webget.dir/all: libsponge/CMakeFiles/sponge.dir/all
 	$(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/depend
 	$(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num=37,38 "Built target webget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num=38,39 "Built target webget"
 .PHONY : apps/CMakeFiles/webget.dir/all
 
 # Build rule for subdir invocation for target.
 apps/CMakeFiles/webget.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 apps/CMakeFiles/webget.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : apps/CMakeFiles/webget.dir/rule
@@ -4479,7 +4537,7 @@ tests/CMakeFiles/byte_stream_many_writes.dir/all: tests/CMakeFiles/spongechecks.
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/byte_stream_many_writes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_many_writes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/byte_stream_many_writes.dir/rule
@@ -4507,7 +4565,7 @@ tests/CMakeFiles/byte_stream_capacity.dir/all: tests/CMakeFiles/spongechecks.dir
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/byte_stream_capacity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_capacity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/byte_stream_capacity.dir/rule
@@ -4535,7 +4593,7 @@ tests/CMakeFiles/byte_stream_two_writes.dir/all: tests/CMakeFiles/spongechecks.d
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/byte_stream_two_writes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_two_writes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/byte_stream_two_writes.dir/rule
@@ -4563,7 +4621,7 @@ tests/CMakeFiles/byte_stream_one_write.dir/all: tests/CMakeFiles/spongechecks.di
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/byte_stream_one_write.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_one_write.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/byte_stream_one_write.dir/rule
@@ -4591,7 +4649,7 @@ tests/CMakeFiles/byte_stream_construction.dir/all: tests/CMakeFiles/spongechecks
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/byte_stream_construction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_construction.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/byte_stream_construction.dir/rule
@@ -4613,7 +4671,7 @@ tests/CMakeFiles/byte_stream_construction.dir/clean:
 tests/CMakeFiles/spongechecks.dir/all:
 	$(MAKE) -f tests/CMakeFiles/spongechecks.dir/build.make tests/CMakeFiles/spongechecks.dir/depend
 	$(MAKE) -f tests/CMakeFiles/spongechecks.dir/build.make tests/CMakeFiles/spongechecks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num=35,36 "Built target spongechecks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tracy/Desktop/sponge/build/CMakeFiles --progress-num=36,37 "Built target spongechecks"
 .PHONY : tests/CMakeFiles/spongechecks.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4645,7 +4703,7 @@ doctests/CMakeFiles/parser_dt.dir/all: libsponge/CMakeFiles/sponge.dir/all
 
 # Build rule for subdir invocation for target.
 doctests/CMakeFiles/parser_dt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 doctests/CMakeFiles/parser_dt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : doctests/CMakeFiles/parser_dt.dir/rule
@@ -4672,7 +4730,7 @@ doctests/CMakeFiles/socket_dt.dir/all: libsponge/CMakeFiles/sponge.dir/all
 
 # Build rule for subdir invocation for target.
 doctests/CMakeFiles/socket_dt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 doctests/CMakeFiles/socket_dt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : doctests/CMakeFiles/socket_dt.dir/rule
@@ -4699,7 +4757,7 @@ doctests/CMakeFiles/address_dt.dir/all: libsponge/CMakeFiles/sponge.dir/all
 
 # Build rule for subdir invocation for target.
 doctests/CMakeFiles/address_dt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 doctests/CMakeFiles/address_dt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tracy/Desktop/sponge/build/CMakeFiles 0
 .PHONY : doctests/CMakeFiles/address_dt.dir/rule

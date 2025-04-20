@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/tracy/Desktop/sponge/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/tracy/Desktop/sponge/libsponge/util -I/home/tracy/Desktop/sponge/libsponge/tcp_helpers -I/home/tracy/Desktop/sponge/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/stream_reassembler.cc.o -c /home/tracy/Desktop/sponge/libsponge/stream_reassembler.cc",
+  "file": "/home/tracy/Desktop/sponge/libsponge/stream_reassembler.cc"
+},
+{
+  "directory": "/home/tracy/Desktop/sponge/build/libsponge",
   "command": "/usr/bin/c++   -I/home/tracy/Desktop/sponge/libsponge/util -I/home/tracy/Desktop/sponge/libsponge/tcp_helpers -I/home/tracy/Desktop/sponge/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/address.cc.o -c /home/tracy/Desktop/sponge/libsponge/util/address.cc",
   "file": "/home/tracy/Desktop/sponge/libsponge/util/address.cc"
 },

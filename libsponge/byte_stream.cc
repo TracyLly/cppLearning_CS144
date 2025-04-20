@@ -16,34 +16,67 @@ void DUMMY_CODE(Targs &&... /* unused */) {}
 
 using namespace std;
 
-ByteStream::ByteStream(const size_t capacity) { DUMMY_CODE(capacity); }
+ByteStream::ByteStream(const size_t capacity) : size(capacity) {
 
+}
+
+// write字符, 最多缓存至capacity长度
 size_t ByteStream::write(const string &data) {
-    DUMMY_CODE(data);
-    return {};
+    int l1 = size - buf.size();
+    int l2 = data.size();
+    int l = min(l2, l1);
+    int i;
+    for (i = 0; i < l; i++) {
+        buf.push_back(data[i]);
+        // 更新计数
+        write_cnt++;
+    }
+
+    return i;
 }
 
 //! \param[in] len bytes will be copied from the output side of the buffer
+// 返回buf中前min(len, size)个字符
 string ByteStream::peek_output(const size_t len) const {
-    DUMMY_CODE(len);
-    return {};
+    string res;
+    int l1 = buf.size();
+    int l2 = len;
+    int l = min(l1, l2);
+    int i = 0;
+    for (auto it = buf.begin(); (it != buf.end()) && (i < l); i++, it++) {
+        res.push_back(*it);
+    }
+
+    return res;
 }
 
 //! \param[in] len bytes will be removed from the output side of the buffer
-void ByteStream::pop_output(const size_t len) { DUMMY_CODE(len); }
+// 弹出buf中前min(len, size)个字符
+void ByteStream::pop_output(const size_t len) {
+    int l1 = buf.size();
+    int l2 = len;
+    int l = min(l1, l2);
+    for (int i = 0; i < l; i++) {
+        buf.pop_front();
+        // 更新计数
+        read_cnt++;
+    }
+}
 
-void ByteStream::end_input() {}
+void ByteStream::end_input() { is_end = true; }
 
-bool ByteStream::input_ended() const { return {}; }
+bool ByteStream::input_ended() const { return is_end; }
 
-size_t ByteStream::buffer_size() const { return {}; }
+size_t ByteStream::buffer_size() const { return buf.size(); }
 
-bool ByteStream::buffer_empty() const { return {}; }
+bool ByteStream::buffer_empty() const { return buffer_size() == 0; }
 
-bool ByteStream::eof() const { return false; }
+// 判断条件
+// buffer为空, 并且输入结束
+bool ByteStream::eof() const { return buffer_empty() && input_ended(); }
 
-size_t ByteStream::bytes_written() const { return {}; }
+size_t ByteStream::bytes_written() const { return write_cnt; }
 
-size_t ByteStream::bytes_read() const { return {}; }
+size_t ByteStream::bytes_read() const { return read_cnt; }
 
-size_t ByteStream::remaining_capacity() const { return {}; }
+size_t ByteStream::remaining_capacity() const { return size - buf.size(); }

@@ -278,6 +278,32 @@ tidy_tests__tcp_fsm_test_harness.cc/fast:
 .PHONY : tidy_tests__tcp_fsm_test_harness.cc/fast
 
 #=============================================================================
+# Target rules for targets named tidy_quiet_tests__tcp_fsm_test_harness.cc
+
+# Build rule for target.
+tidy_quiet_tests__tcp_fsm_test_harness.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__tcp_fsm_test_harness.cc
+.PHONY : tidy_quiet_tests__tcp_fsm_test_harness.cc
+
+# fast build rule for target.
+tidy_quiet_tests__tcp_fsm_test_harness.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build
+.PHONY : tidy_quiet_tests__tcp_fsm_test_harness.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_tests__send_transmit.cc
+
+# Build rule for target.
+tidy_tests__send_transmit.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__send_transmit.cc
+.PHONY : tidy_tests__send_transmit.cc
+
+# fast build rule for target.
+tidy_tests__send_transmit.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/build
+.PHONY : tidy_tests__send_transmit.cc/fast
+
+#=============================================================================
 # Target rules for targets named tidy_tests__byte_stream_test_harness.cc
 
 # Build rule for target.
@@ -512,6 +538,32 @@ tidy_tests__fsm_stream_reassembler_overlapping.cc/fast:
 .PHONY : tidy_tests__fsm_stream_reassembler_overlapping.cc/fast
 
 #=============================================================================
+# Target rules for targets named tidy_quiet_tests__send_window.cc
+
+# Build rule for target.
+tidy_quiet_tests__send_window.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__send_window.cc
+.PHONY : tidy_quiet_tests__send_window.cc
+
+# fast build rule for target.
+tidy_quiet_tests__send_window.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build
+.PHONY : tidy_quiet_tests__send_window.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_util__socket.cc
+
+# Build rule for target.
+tidy_util__socket.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__socket.cc
+.PHONY : tidy_util__socket.cc
+
+# fast build rule for target.
+tidy_util__socket.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/build
+.PHONY : tidy_util__socket.cc/fast
+
+#=============================================================================
 # Target rules for targets named tidy_quiet_tests__fsm_stream_reassembler_holes.cc
 
 # Build rule for target.
@@ -549,6 +601,19 @@ tidy_util__parser.cc: cmake_check_build_system
 tidy_util__parser.cc/fast:
 	$(MAKE) -f CMakeFiles/tidy_util__parser.cc.dir/build.make CMakeFiles/tidy_util__parser.cc.dir/build
 .PHONY : tidy_util__parser.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_libsponge__stream_reassembler.cc
+
+# Build rule for target.
+tidy_libsponge__stream_reassembler.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_libsponge__stream_reassembler.cc
+.PHONY : tidy_libsponge__stream_reassembler.cc
+
+# fast build rule for target.
+tidy_libsponge__stream_reassembler.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_libsponge__stream_reassembler.cc.dir/build
+.PHONY : tidy_libsponge__stream_reassembler.cc/fast
 
 #=============================================================================
 # Target rules for targets named tidy_quiet_util__parser.cc
@@ -603,6 +668,32 @@ tidy_quiet_util__eventloop.cc/fast:
 .PHONY : tidy_quiet_util__eventloop.cc/fast
 
 #=============================================================================
+# Target rules for targets named tidy_quiet_tests__fsm_ack_rst_win.cc
+
+# Build rule for target.
+tidy_quiet_tests__fsm_ack_rst_win.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__fsm_ack_rst_win.cc
+.PHONY : tidy_quiet_tests__fsm_ack_rst_win.cc
+
+# fast build rule for target.
+tidy_quiet_tests__fsm_ack_rst_win.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build
+.PHONY : tidy_quiet_tests__fsm_ack_rst_win.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_tests__fsm_loopback.cc
+
+# Build rule for target.
+tidy_tests__fsm_loopback.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__fsm_loopback.cc
+.PHONY : tidy_tests__fsm_loopback.cc
+
+# fast build rule for target.
+tidy_tests__fsm_loopback.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build
+.PHONY : tidy_tests__fsm_loopback.cc/fast
+
+#=============================================================================
 # Target rules for targets named tidy_quiet_util__socket.cc
 
 # Build rule for target.
@@ -642,30 +733,30 @@ tidy_quiet_tests__fsm_retx.cc/fast:
 .PHONY : tidy_quiet_tests__fsm_retx.cc/fast
 
 #=============================================================================
-# Target rules for targets named tidy_util__socket.cc
+# Target rules for targets named tidy_quiet_util__buffer.cc
 
 # Build rule for target.
-tidy_util__socket.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__socket.cc
-.PHONY : tidy_util__socket.cc
+tidy_quiet_util__buffer.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__buffer.cc
+.PHONY : tidy_quiet_util__buffer.cc
 
 # fast build rule for target.
-tidy_util__socket.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/build
-.PHONY : tidy_util__socket.cc/fast
+tidy_quiet_util__buffer.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/build
+.PHONY : tidy_quiet_util__buffer.cc/fast
 
 #=============================================================================
-# Target rules for targets named tidy_quiet_tests__send_window.cc
+# Target rules for targets named tidy_quiet_doctests__socket_example_1.cc
 
 # Build rule for target.
-tidy_quiet_tests__send_window.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__send_window.cc
-.PHONY : tidy_quiet_tests__send_window.cc
+tidy_quiet_doctests__socket_example_1.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__socket_example_1.cc
+.PHONY : tidy_quiet_doctests__socket_example_1.cc
 
 # fast build rule for target.
-tidy_quiet_tests__send_window.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build.make CMakeFiles/tidy_quiet_tests__send_window.cc.dir/build
-.PHONY : tidy_quiet_tests__send_window.cc/fast
+tidy_quiet_doctests__socket_example_1.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build
+.PHONY : tidy_quiet_doctests__socket_example_1.cc/fast
 
 #=============================================================================
 # Target rules for targets named tidy_quiet_doctests__address_example_1.cc
@@ -822,32 +913,6 @@ tidy_quiet_tests__fsm_reorder.cc: cmake_check_build_system
 tidy_quiet_tests__fsm_reorder.cc/fast:
 	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_reorder.cc.dir/build
 .PHONY : tidy_quiet_tests__fsm_reorder.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__fsm_ack_rst_relaxed.cc
-
-# Build rule for target.
-tidy_tests__fsm_ack_rst_relaxed.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__fsm_ack_rst_relaxed.cc
-.PHONY : tidy_tests__fsm_ack_rst_relaxed.cc
-
-# fast build rule for target.
-tidy_tests__fsm_ack_rst_relaxed.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build
-.PHONY : tidy_tests__fsm_ack_rst_relaxed.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__parser_example.cc
-
-# Build rule for target.
-tidy_quiet_doctests__parser_example.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__parser_example.cc
-.PHONY : tidy_quiet_doctests__parser_example.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__parser_example.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build
-.PHONY : tidy_quiet_doctests__parser_example.cc/fast
 
 #=============================================================================
 # Target rules for targets named tidy_quiet_doctests__socket_dt.cc
@@ -1084,32 +1149,6 @@ tidy_quiet_doctests__socket_example_2.cc/fast:
 .PHONY : tidy_quiet_doctests__socket_example_2.cc/fast
 
 #=============================================================================
-# Target rules for targets named tidy_quiet_tests__tcp_fsm_test_harness.cc
-
-# Build rule for target.
-tidy_quiet_tests__tcp_fsm_test_harness.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__tcp_fsm_test_harness.cc
-.PHONY : tidy_quiet_tests__tcp_fsm_test_harness.cc
-
-# fast build rule for target.
-tidy_quiet_tests__tcp_fsm_test_harness.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__tcp_fsm_test_harness.cc.dir/build
-.PHONY : tidy_quiet_tests__tcp_fsm_test_harness.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__send_transmit.cc
-
-# Build rule for target.
-tidy_tests__send_transmit.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__send_transmit.cc
-.PHONY : tidy_tests__send_transmit.cc
-
-# fast build rule for target.
-tidy_tests__send_transmit.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__send_transmit.cc.dir/build.make CMakeFiles/tidy_tests__send_transmit.cc.dir/build
-.PHONY : tidy_tests__send_transmit.cc/fast
-
-#=============================================================================
 # Target rules for targets named tidy_quiet_tests__fsm_ack_rst_relaxed.cc
 
 # Build rule for target.
@@ -1123,6 +1162,19 @@ tidy_quiet_tests__fsm_ack_rst_relaxed.cc/fast:
 .PHONY : tidy_quiet_tests__fsm_ack_rst_relaxed.cc/fast
 
 #=============================================================================
+# Target rules for targets named tidy_quiet_libsponge__stream_reassembler.cc
+
+# Build rule for target.
+tidy_quiet_libsponge__stream_reassembler.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_libsponge__stream_reassembler.cc
+.PHONY : tidy_quiet_libsponge__stream_reassembler.cc
+
+# fast build rule for target.
+tidy_quiet_libsponge__stream_reassembler.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/build.make CMakeFiles/tidy_quiet_libsponge__stream_reassembler.cc.dir/build
+.PHONY : tidy_quiet_libsponge__stream_reassembler.cc/fast
+
+#=============================================================================
 # Target rules for targets named tidy_quiet_doctests__socket_example_3.cc
 
 # Build rule for target.
@@ -1134,58 +1186,6 @@ tidy_quiet_doctests__socket_example_3.cc: cmake_check_build_system
 tidy_quiet_doctests__socket_example_3.cc/fast:
 	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/build
 .PHONY : tidy_quiet_doctests__socket_example_3.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__fsm_ack_rst_win.cc
-
-# Build rule for target.
-tidy_quiet_tests__fsm_ack_rst_win.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__fsm_ack_rst_win.cc
-.PHONY : tidy_quiet_tests__fsm_ack_rst_win.cc
-
-# fast build rule for target.
-tidy_quiet_tests__fsm_ack_rst_win.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_ack_rst_win.cc.dir/build
-.PHONY : tidy_quiet_tests__fsm_ack_rst_win.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__socket_example_1.cc
-
-# Build rule for target.
-tidy_quiet_doctests__socket_example_1.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__socket_example_1.cc
-.PHONY : tidy_quiet_doctests__socket_example_1.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__socket_example_1.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build
-.PHONY : tidy_quiet_doctests__socket_example_1.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__buffer.cc
-
-# Build rule for target.
-tidy_quiet_util__buffer.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__buffer.cc
-.PHONY : tidy_quiet_util__buffer.cc
-
-# fast build rule for target.
-tidy_quiet_util__buffer.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/build
-.PHONY : tidy_quiet_util__buffer.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__fsm_loopback.cc
-
-# Build rule for target.
-tidy_tests__fsm_loopback.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__fsm_loopback.cc
-.PHONY : tidy_tests__fsm_loopback.cc
-
-# fast build rule for target.
-tidy_tests__fsm_loopback.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build.make CMakeFiles/tidy_tests__fsm_loopback.cc.dir/build
-.PHONY : tidy_tests__fsm_loopback.cc/fast
 
 #=============================================================================
 # Target rules for targets named tidy_quiet_tests__tcp_parser.cc
@@ -1290,6 +1290,32 @@ tidy_quiet_tests__fsm_connect_relaxed.cc: cmake_check_build_system
 tidy_quiet_tests__fsm_connect_relaxed.cc/fast:
 	$(MAKE) -f CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/build.make CMakeFiles/tidy_quiet_tests__fsm_connect_relaxed.cc.dir/build
 .PHONY : tidy_quiet_tests__fsm_connect_relaxed.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_quiet_doctests__parser_example.cc
+
+# Build rule for target.
+tidy_quiet_doctests__parser_example.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__parser_example.cc
+.PHONY : tidy_quiet_doctests__parser_example.cc
+
+# fast build rule for target.
+tidy_quiet_doctests__parser_example.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build
+.PHONY : tidy_quiet_doctests__parser_example.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_tests__fsm_ack_rst_relaxed.cc
+
+# Build rule for target.
+tidy_tests__fsm_ack_rst_relaxed.cc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__fsm_ack_rst_relaxed.cc
+.PHONY : tidy_tests__fsm_ack_rst_relaxed.cc
+
+# fast build rule for target.
+tidy_tests__fsm_ack_rst_relaxed.cc/fast:
+	$(MAKE) -f CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build.make CMakeFiles/tidy_tests__fsm_ack_rst_relaxed.cc.dir/build
+.PHONY : tidy_tests__fsm_ack_rst_relaxed.cc/fast
 
 #=============================================================================
 # Target rules for targets named tidy_libsponge__byte_stream.cc
@@ -2195,6 +2221,8 @@ help:
 	@echo "... tidy_quiet_tests__wrapping_integers_cmp.cc"
 	@echo "... tidy_tests__tcp_parser.cc"
 	@echo "... tidy_tests__tcp_fsm_test_harness.cc"
+	@echo "... tidy_quiet_tests__tcp_fsm_test_harness.cc"
+	@echo "... tidy_tests__send_transmit.cc"
 	@echo "... tidy_tests__byte_stream_test_harness.cc"
 	@echo "... tidy_quiet_tests__send_transmit.cc"
 	@echo "... tidy_quiet_tests__byte_stream_test_harness.cc"
@@ -2214,18 +2242,23 @@ help:
 	@echo "... edit_cache"
 	@echo "... tidy_quiet_tests__byte_stream_two_writes.cc"
 	@echo "... tidy_tests__fsm_stream_reassembler_overlapping.cc"
+	@echo "... tidy_quiet_tests__send_window.cc"
+	@echo "... tidy_util__socket.cc"
 	@echo "... tidy_quiet_tests__fsm_stream_reassembler_holes.cc"
 	@echo "... check_lab0"
 	@echo "... tidy_util__parser.cc"
+	@echo "... tidy_libsponge__stream_reassembler.cc"
 	@echo "... tidy_quiet_util__parser.cc"
 	@echo "... tidy_util__eventloop.cc"
 	@echo "... tidy_quiet_tests__fsm_loopback_win.cc"
 	@echo "... tidy_quiet_util__eventloop.cc"
+	@echo "... tidy_quiet_tests__fsm_ack_rst_win.cc"
+	@echo "... tidy_tests__fsm_loopback.cc"
 	@echo "... tidy_quiet_util__socket.cc"
 	@echo "... tidy_doctests__address_example_3.cc"
 	@echo "... tidy_quiet_tests__fsm_retx.cc"
-	@echo "... tidy_util__socket.cc"
-	@echo "... tidy_quiet_tests__send_window.cc"
+	@echo "... tidy_quiet_util__buffer.cc"
+	@echo "... tidy_quiet_doctests__socket_example_1.cc"
 	@echo "... tidy_quiet_doctests__address_example_1.cc"
 	@echo "... tidy_quiet_doctests__address_dt.cc"
 	@echo "... tidy_quiet_tests__fsm_ack_rst.cc"
@@ -2238,8 +2271,6 @@ help:
 	@echo "... tidy_tests__wrapping_integers_wrap.cc"
 	@echo "... tidy_quiet_apps__webget.cc"
 	@echo "... tidy_quiet_tests__fsm_reorder.cc"
-	@echo "... tidy_tests__fsm_ack_rst_relaxed.cc"
-	@echo "... tidy_quiet_doctests__parser_example.cc"
 	@echo "... tidy_quiet_doctests__socket_dt.cc"
 	@echo "... tidy_doctests__address_example_2.cc"
 	@echo "... tidy_doctests__address_example_1.cc"
@@ -2258,14 +2289,9 @@ help:
 	@echo "... tidy_util__buffer.cc"
 	@echo "... tidy_apps__webget.cc"
 	@echo "... tidy_quiet_doctests__socket_example_2.cc"
-	@echo "... tidy_quiet_tests__tcp_fsm_test_harness.cc"
-	@echo "... tidy_tests__send_transmit.cc"
 	@echo "... tidy_quiet_tests__fsm_ack_rst_relaxed.cc"
+	@echo "... tidy_quiet_libsponge__stream_reassembler.cc"
 	@echo "... tidy_quiet_doctests__socket_example_3.cc"
-	@echo "... tidy_quiet_tests__fsm_ack_rst_win.cc"
-	@echo "... tidy_quiet_doctests__socket_example_1.cc"
-	@echo "... tidy_quiet_util__buffer.cc"
-	@echo "... tidy_tests__fsm_loopback.cc"
 	@echo "... tidy_quiet_tests__tcp_parser.cc"
 	@echo "... tidy_doctests__socket_example_3.cc"
 	@echo "... tidy_tests__byte_stream_one_write.cc"
@@ -2274,6 +2300,8 @@ help:
 	@echo "... tidy_quiet_doctests__parser_dt.cc"
 	@echo "... tidy_tests__recv_connect.cc"
 	@echo "... tidy_quiet_tests__fsm_connect_relaxed.cc"
+	@echo "... tidy_quiet_doctests__parser_example.cc"
+	@echo "... tidy_tests__fsm_ack_rst_relaxed.cc"
 	@echo "... tidy_libsponge__byte_stream.cc"
 	@echo "... tidy_tests__fsm_ack_rst_win_relaxed.cc"
 	@echo "... tidy_doctests__socket_dt.cc"
