@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tracy/Desktop/sponge/libsponge/byte_stream.hh
+cstddef
+-
+cstdint
+-
+deque
+-
+list
+-
+string
+-
+utility
+-
+
+/home/tracy/Desktop/sponge/libsponge/stream_reassembler.cc
+stream_reassembler.hh
+/home/tracy/Desktop/sponge/libsponge/stream_reassembler.hh
+iostream
+-
+
+/home/tracy/Desktop/sponge/libsponge/stream_reassembler.hh
+byte_stream.hh
+/home/tracy/Desktop/sponge/libsponge/byte_stream.hh
+cstdint
+-
+string
+-
+vector
+-
+list
+-
+utility
+-
+

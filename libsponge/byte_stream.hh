@@ -16,7 +16,13 @@
 class ByteStream {
   private:
     // Your code here -- add private members as necessary.
-
+    // list作为缓存
+    std::list<char> buf = {};
+    size_t size;
+    // 0, start, end
+    size_t read_cnt = 0;
+    size_t write_cnt = 0;
+    bool is_end = 0;
     bool _error{};  //!< Flag indicating that the stream suffered an error.
 
   public:
