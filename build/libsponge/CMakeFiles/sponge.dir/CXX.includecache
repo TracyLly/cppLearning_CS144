@@ -23,6 +23,8 @@ utility
 ../libsponge/stream_reassembler.hh
 byte_stream.hh
 ../libsponge/byte_stream.hh
+util/buffer.hh
+../libsponge/util/buffer.hh
 cstdint
 -
 string
@@ -31,7 +33,7 @@ vector
 -
 list
 -
-utility
+set
 -
 
 ../libsponge/tcp_helpers/tcp_header.hh
@@ -151,6 +153,8 @@ iostream
 /home/tracy/Desktop/sponge/libsponge/stream_reassembler.hh
 byte_stream.hh
 /home/tracy/Desktop/sponge/libsponge/byte_stream.hh
+util/buffer.hh
+/home/tracy/Desktop/sponge/libsponge/util/buffer.hh
 cstdint
 -
 string
@@ -159,7 +163,7 @@ vector
 -
 list
 -
-utility
+set
 -
 
 /home/tracy/Desktop/sponge/libsponge/tcp_helpers/tcp_header.cc

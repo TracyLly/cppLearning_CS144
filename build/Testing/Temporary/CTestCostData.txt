@@ -1,0 +1,26 @@
+t_wrapping_ints_cmp 1 0.00283205
+t_wrapping_ints_unwrap 1 0.00119989
+t_wrapping_ints_wrap 1 0.00104509
+t_recv_connect 1 0.00107956
+t_recv_transmit 1 0.0274819
+t_recv_window 1 0.00141661
+t_recv_reorder 1 0.00230745
+t_recv_close 1 0.00216478
+t_strm_reassem_single 1 0.00105417
+t_strm_reassem_seq 1 0.00126034
+t_strm_reassem_dup 1 0.00346269
+t_strm_reassem_holes 1 0.00131186
+t_strm_reassem_many 1 0.0461574
+t_strm_reassem_overlapping 1 0.00143537
+t_strm_reassem_win 1 0.0496584
+t_strm_reassem_cap 1 0.00134406
+t_byte_stream_construction 1 0.00108151
+t_byte_stream_one_write 1 0.00340608
+t_byte_stream_two_writes 1 0.00159455
+t_byte_stream_capacity 1 0.00102531
+t_byte_stream_many_writes 1 0.00409713
+t_webget 1 0.66355
+t_address_dt 1 0.0103026
+t_parser_dt 1 0.00309549
+t_socket_dt 1 0.00292136
+---

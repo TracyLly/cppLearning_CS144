@@ -2,19 +2,20 @@
 #define SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH
 
 #include "byte_stream.hh"
+#include "util/buffer.hh"
 
 #include <cstdint>
 #include <string>
 #include <vector>
 #include <list>
-#include <utility> 
+#include <set>
 
 //! \brief A class that assembles a series of excerpts from a byte stream (possibly out of order,
 //! possibly overlapping) into an in-order byte stream.
 /**
  * Buffer数据结构, 用来缓存已到达, 但没有被push的部分, 
  * 每个部分为(string, index), 利用list存储, 按照index递增的顺序存储。
- */
+ 
 class Buffer {
   private:
     std::list<std::pair<std::string, uint64_t>> buf = {};
@@ -35,21 +36,32 @@ class Buffer {
     // 打印
     void print_buffer();
 };
+*/
 
 class StreamReassembler {
   private:
     // Your code here -- add private members as necessary.
-    Buffer buf;
-    // 是否为eof
-    bool eof_flag = false;
-    // 下一个被push的字符索引
-    uint64_t _index = 0;
-    // 最后一个被push的字符
-    std::string last_str = "";
+    struct block_node {
+        size_t begin = 0;
+        size_t length = 0;
+        std::string data = "";
+        bool operator<(const block_node t) const { return begin < t.begin; }
+    };
+    std::set<block_node> _blocks = {};
+    std::vector<char> _buffer = {};
+    size_t _unassembled_byte = 0;
+    size_t _head_index = 0;
+    bool _eof_flag = false;
     ByteStream _output;  //!< The reassembled in-order byte stream
     size_t _capacity;    //!< The maximum number of bytes
 
+    //! merge elm2 to elm1, return merged bytes
+    long merge_block(block_node &elm1, const block_node &elm2);
+
+
   public:
+    size_t head_index() const { return _head_index; }
+    bool input_ended() const { return _output.input_ended(); }
     //! \brief Construct a `StreamReassembler` that will store up to `capacity` bytes.
     //! \note This capacity limits both the bytes that have been reassembled,
     //! and those that have not yet been reassembled.
@@ -75,7 +87,7 @@ class StreamReassembler {
     ByteStream &stream_out() { return _output; }
     //!@}
 
-    Buffer &buffer_out() { return buf; }
+    //Buffer &buffer_out() { return buf; }
 
     //! The number of bytes in the substrings stored but not yet reassembled
     //!
@@ -88,7 +100,6 @@ class StreamReassembler {
     //! \returns `true` if no substrings are waiting to be assembled
     bool empty() const;
 
-    int get_index() { return _index; };
 };
 
 #endif  // SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH
